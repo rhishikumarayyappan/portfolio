@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rhishi Kumar Ayyappan · AI Risk Analyst</title>
+  <meta name="description" content="Rhishi Kumar Ayyappan is an AI Risk Analyst in Galway, Ireland, working on responsible AI, ML evaluation and supervisory AI risk assessment." />
+  <meta property="og:title" content="Rhishi Kumar Ayyappan · AI Risk Analyst" />
+  <meta property="og:description" content="Statistical rigour and ethical integrity for AI risk assessment, so AI's benefits are realised safely." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0c10" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c10'/%3E%3Cpath d='M32 12 50 20v12c0 11-7.6 18.6-18 22-10.4-3.4-18-11-18-22V20z' fill='none' stroke='%23e8b86a' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='m24 32 6 6 11-12' fill='none' stroke='%237fd1b9' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" aria-label="Rhishi Kumar Ayyappan, home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.4-3 7.4-7 8.8C8 18.4 5 15.4 5 11V6z"/><path d="m9 11.5 2.2 2.2L15.5 9.5"/></svg>
+        </span>
+        <span>Rhishi Ayyappan</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#approach">Approach</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+      </nav>
+      <a href="#contact" class="btn btn-small">Get in touch</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="pulse" aria-hidden="true"></span>AI Risk Analyst · Galway, Ireland</p>
+        <h1 class="reveal">Making AI systems <em>safe</em> to&nbsp;trust.</h1>
+        <p class="lede reveal">
+          I evaluate machine learning and generative AI systems with statistical rigour and ethical integrity:
+          audit the models, find where they fail, and build controls so AI's benefits arrive
+          <span class="hl">safely, in the public interest.</span>
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#work" class="btn btn-primary">View selected work
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/rhishi-ayyappan" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+          <a href="https://github.com/rhishikumarayyappan" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        </div>
+        <ul class="hero-meta reveal">
+          <li><span>MSc AI</span>First Class Honours</li>
+          <li><span>Status</span>Stamp 1G · Open to relocate</li>
+        </ul>
+      </div>
+
+      <!-- Live trust-gate console -->
+      <div class="console reveal" aria-label="Animated illustration of an AI trust gate: responses scoring below 0.85 are routed to human review">
+        <div class="console-head">
+          <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="mono">trust-gate · live evaluation</span>
+          <span class="tag tag-live">● LIVE</span>
+        </div>
+        <div class="console-body">
+          <div class="gauge-row">
+            <div class="gauge">
+              <svg viewBox="0 0 120 70" aria-hidden="true">
+                <path class="gauge-track" d="M10 62a50 50 0 0 1 100 0" />
+                <path class="gauge-fill" id="gaugeFill" d="M10 62a50 50 0 0 1 100 0" />
+                <line class="gauge-threshold" x1="0" y1="0" x2="0" y2="0" id="gaugeThreshold" />
+              </svg>
+              <div class="gauge-readout">
+                <span class="mono gauge-label">trust score</span>
+                <span class="gauge-value" id="gaugeValue">0.92</span>
+              </div>
+            </div>
+            <dl class="stats">
+              <div><dt>evaluated</dt><dd id="statEval">0</dd></div>
+              <div><dt>routed to human</dt><dd id="statHitl">0</dd></div>
+              <div><dt>false positives</dt><dd class="ok">0</dd></div>
+            </dl>
+          </div>
+          <div class="threshold-note mono">abstain if score &lt; <b>0.85</b> → human-in-the-loop</div>
+          <ol class="log" id="log" aria-hidden="true"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="metrics wrap" aria-label="Key results">
+      <div class="metric reveal">
+        <span class="metric-num" data-count="94" data-suffix="%">94%</span>
+        <span class="metric-label">accuracy on a production NLP and generative AI system</span>
+      </div>
+      <div class="metric reveal">
+        <span class="metric-num" data-count="0">0</span>
+        <span class="metric-label">false positives from AI safety safeguards in production</span>
+      </div>
+      <div class="metric reveal">
+        <span class="metric-num" data-count="90.6" data-decimals="1" data-suffix="%">90.6%</span>
+        <span class="metric-label">77-class intent accuracy, about 25 points above the baseline</span>
+      </div>
+      <div class="metric reveal">
+        <span class="metric-num" data-count="20" data-prefix="~" data-suffix="%">~20%</span>
+        <span class="metric-label">cost reduction from audited, observable ML delivery</span>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section wrap" id="approach">
+      <div class="section-head reveal">
+        <p class="kicker mono">01 — Approach</p>
+        <h2>How I assess <em>AI risk</em></h2>
+        <p class="section-sub">A repeatable loop that turns a model's behaviour into evidence a supervisor can act on.</p>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step-n mono">01</span>
+          <h3>Identify</h3>
+          <p>Map failure modes before they reach users: hallucination, reasoning collapse, out-of-distribution inputs and adversarial prompts.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-n mono">02</span>
+          <h3>Measure</h3>
+          <p>Design benchmarks and experiments, then quantify behaviour with per-class evaluation, confusion matrices and statistical testing.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-n mono">03</span>
+          <h3>Mitigate</h3>
+          <p>Put risk controls into production: trust-score abstention thresholds, human-in-the-loop routing, OOD detection and observability.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step-n mono">04</span>
+          <h3>Communicate</h3>
+          <p>Write the findings up for technical and supervisory audiences, with governance documentation that supports accountable deployment.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section wrap" id="work">
+      <div class="section-head reveal">
+        <p class="kicker mono">02 — Selected work</p>
+        <h2>Evaluation, safeguards &amp; <em>evidence</em></h2>
+      </div>
+
+      <article class="project project-feature reveal">
+        <div class="project-main">
+          <div class="project-tags mono"><span class="tag tag-amber">Responsible AI</span><span class="tag">Risk controls</span></div>
+          <h3>Agentic AI Evaluation Framework</h3>
+          <p>An agentic evaluation framework with built-in risk controls. Any response scoring below a <b>0.85 trust threshold</b> makes the system abstain and route the case to a human reviewer. The safeguards had <b>zero false positives in production</b>, statistical analysis measured and reduced hallucination risk, and the full responsible AI governance documentation ships with the system.</p>
+          <ul class="stack mono"><li>LangGraph</li><li>LangChain</li><li>FAISS</li><li>RAG</li><li>HuggingFace</li><li>FastAPI</li><li>Docker</li></ul>
+          <a class="link-arrow" href="https://huggingface.co/spaces/rhishikumarayyappan/Diligent-ACE-Engine" target="_blank" rel="noopener">Open live demo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+        <div class="project-figs">
+          <div class="fig"><span class="fig-num">≥ 0.85</span><span class="fig-label">trust-score abstention threshold</span></div>
+          <div class="fig"><span class="fig-num">0</span><span class="fig-label">false positives in production</span></div>
+          <div class="fig"><span class="fig-num">~2.09<small>ms</small></span><span class="fig-label">retrieval latency, multilingual enterprise workflows</span></div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project reveal">
+          <div class="project-tags mono"><span class="tag tag-teal">Evaluation science</span></div>
+          <h3>LLM Reasoning Evaluation Benchmark</h3>
+          <p>A benchmark that tests whether Chain-of-Thought reasoning in frontier LLMs collapses under adversarial and out-of-distribution prompts. Experimental design and statistical analysis put numbers on where and how reasoning fails.</p>
+          <ul class="stack mono"><li>PyTorch</li><li>HuggingFace</li><li>Experimental design</li><li>Statistics</li></ul>
+          <a class="link-arrow" href="https://github.com/rhishikumarayyappan" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </article>
+        <article class="project reveal">
+          <div class="project-tags mono"><span class="tag tag-teal">Model evaluation</span></div>
+          <h3>NLP Intent Classification</h3>
+          <p>A fine-tuned DistilBERT model for 77-class intent classification reaching <b>90.6% accuracy</b>, about 25 points above the ~65% industry baseline. It was stress-tested with OOD detection, per-class evaluation and confusion-matrix analysis.</p>
+          <ul class="stack mono"><li>DistilBERT</li><li>Transformers</li><li>scikit-learn</li><li>ONNX</li></ul>
+          <a class="link-arrow" href="https://github.com/rhishikumarayyappan/NLP-Projects" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section wrap" id="experience">
+      <div class="section-head reveal">
+        <p class="kicker mono">03 — Experience</p>
+        <h2>Where I've <em>applied</em> it</h2>
+      </div>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-when mono">Oct 2024 — May 2025</div>
+          <div class="tl-body">
+            <h3>Applied AI &amp; Operations Engineer</h3>
+            <p class="tl-org">Unimad.ai · London, UK (Remote)</p>
+            <ul>
+              <li>Led R&amp;D and production delivery of ML and AI systems under responsible AI practices, including model audits, risk assessment and observability. This cut costs by <b>~20%</b>.</li>
+              <li>Built and evaluated NLP and generative AI systems that reached <b>94% accuracy</b>, benchmarking performance with quantitative and statistical methods.</li>
+              <li>Presented AI risk findings to technical and supervisory audiences and worked across teams on ethical, accountable deployment.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-when mono">May 2023 — Jul 2023</div>
+          <div class="tl-body">
+            <h3>AI Solutions &amp; Data Support Intern</h3>
+            <p class="tl-org">Sona Comstar · Chennai, India</p>
+            <ul>
+              <li>Built Python and SQL pipelines across <b>5+ production systems</b> at a global manufacturer, cutting manual analytical effort by <b>~30%</b>.</li>
+              <li>Validated ML tooling with statistical methods and documented its failure modes for systematic evaluation.</li>
+              <li>Delivered <b>10+ supervisory and stakeholder reports</b> to technical and non-technical audiences.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="edu">
+        <article class="edu-card reveal">
+          <p class="mono edu-when">Sep 2024 — Sep 2025</p>
+          <h3>MSc Computer Science (Artificial Intelligence)</h3>
+          <p class="tl-org">University of Galway · <span class="hl">First Class Honours (1:1)</span></p>
+          <p class="edu-course">Advanced NLP · Deep Learning · Principles of ML · Agents &amp; Multi-Agent Systems · Reinforcement Learning · AI Ethics · AI Research</p>
+        </article>
+        <article class="edu-card reveal">
+          <p class="mono edu-when">Nov 2020 — Apr 2024</p>
+          <h3>BTech Artificial Intelligence &amp; Data Science</h3>
+          <p class="tl-org">Easwari Engineering College (SRM Group) · <span class="hl">First Class Honours (1:1), GPA 3.54</span></p>
+          <p class="edu-course">Machine Learning · Deep Learning · Data Analytics · Mathematics · Data Structures &amp; Algorithms</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section wrap" id="skills">
+      <div class="section-head reveal">
+        <p class="kicker mono">04 — Capabilities</p>
+        <h2>The <em>toolkit</em></h2>
+      </div>
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3><span class="sg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.4-3 7.4-7 8.8C8 18.4 5 15.4 5 11V6z"/></svg></span>AI Evaluation &amp; Safety</h3>
+          <ul class="chips"><li>AI Risk Assessment</li><li>Supervisory Review</li><li>Responsible AI</li><li>Generative AI</li><li>AI Ethics</li><li>Hallucination Analysis</li><li>Human-in-the-Loop</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="sg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg></span>ML &amp; Methods</h3>
+          <ul class="chips"><li>Machine Learning</li><li>Statistical Methods</li><li>Experimental Design</li><li>Data Science</li><li>PyTorch</li><li>HuggingFace</li><li>scikit-learn</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3><span class="sg-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span>Tools &amp; Infrastructure</h3>
+          <ul class="chips"><li>Python</li><li>LangChain</li><li>LangGraph</li><li>FastAPI</li><li>Docker</li><li>AWS</li><li>SQL</li><li>Git</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact wrap" id="contact">
+      <div class="contact-card reveal">
+        <p class="kicker mono">05 — Contact</p>
+        <h2>Let's make AI <em>accountable.</em></h2>
+        <p>I'm open to roles in AI risk, model evaluation and responsible AI. I'm based in Galway on Stamp 1G and happy to relocate.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:rhishikumarayyappan@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            rhishikumarayyappan@gmail.com
+          </a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/rhishi-ayyappan" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/rhishikumarayyappan" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>© <span id="year">2026</span> Rhishi Kumar Ayyappan</span>
+    <span class="mono">Built with care · Galway, Ireland</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
